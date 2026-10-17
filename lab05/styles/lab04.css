@@ -1,0 +1,95 @@
+/*
+filename: lab04.css
+author: Trần Quang Đại
+created: 13/10/2026
+last modified: 13/10/2026
+description: Stylesheet for lab04.html
+*/
+
+/* --- Element Selectors --- */
+/* Đổi font mặc định và màu nền cho toàn bộ trang */
+* {
+    font-family: calibri, sans-serif;
+    color: #2F4F4F;
+}
+
+/* Đổi thẻ h1 thành màu tím (purple) (nếu yêu cầu trong bước 3 chưa bị thay thế) */
+h1 {
+    color: purple;
+}
+
+/* Đổi màu, in đậm và tăng kích thước cho thẻ h2 */
+h2 {
+    color: rgb(0, 128, 128);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* --- Group Selectors --- */
+/* In nghiêng thẻ aside và footer */
+aside,
+footer {
+    font-style: italic;
+}
+
+/* Đổi font chữ cho các tiêu đề h1, h2, h3 */
+h1,
+h2,
+h3 {
+    font-family: arial, sans-serif;
+}
+
+/* Thêm viền cho bảng, ô tiêu đề, và ô dữ liệu */
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+/* --- ID Selectors --- */
+/* Căn giữa tiêu đề Images */
+#images {
+    text-align: center;
+}
+
+/* Đổi màu thẻ h3 cụ thể thành màu đỏ */
+#headings-title {
+    color: red;
+}
+
+/* --- Class Selectors --- */
+/* Đổi màu cam và in đậm cho các ký tự đặc biệt */
+.special {
+    color: darkorange;
+    font-weight: bold;
+}
+
+/* Căn phải cho text */
+.right-align {
+    text-align: right;
+}
+
+/* --- Contextual Selectors --- */
+/* Định dạng các thẻ a (link) nằm trong thanh điều hướng nav */
+nav a {
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 4px solid #ccc;
+}
+
+/* Đổi hình dạng dấu chấm (bullet) của danh sách ul nằm trong danh sách ol thành hình vuông */
+ol ul {
+    list-style-type: square;
+}
+
+/* --- Pseudo Classes --- */
+/* Ẩn thẻ aside khi rê chuột vào */
+aside:hover {
+    display: none;
+}
+
+/* Đổi màu nền và màu viền khi rê chuột vào các link trên thanh điều hướng */
+nav a:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+}
